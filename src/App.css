@@ -1,38 +1,29 @@
+/* aca  haremos los fondos de la pagina */
 .App {
-  text-align: center;
+   text-align: center;
+   background-image: url(https://cloudfront-us-east-1.images.arcpublishing.com/infobae/OEKCSJM6EVALLNKGJJS3KDSU74.jpg);
+	position: relative;
+	width: 96.7%;   
+   overflow-y: visible;
+   position: absolute;
+   background-repeat:initial;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+.TwoApp {
+   justify-content:center;
+   align-items: center;
+   margin: 0%;
+   /* margen de imagen  */
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-image: url(https://cloudfront-us-east-1.images.arcpublishing.com/infobae/OEKCSJM6EVALLNKGJJS3KDSU74.jpg);
+   background-attachment: fixed;
+   /* esta opcion te fija la iamgen en la pantalla */
+   position: relative;
+   text-align: center; 
+   /* text aliagn center centra el texto  */
+   opacity: 0.8;
+   /* recuerda para trasparencia es opacity */
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
