@@ -1,17 +1,124 @@
 .buttonInicio {
+    /* color: red; */
+    /* max-width: 110%; */
+    /* background-color: black; */
+    /* border: 100; */
+    /* border-radius: 10px;  */
+    /* padding: 5px 5px    */
+    padding:  5px 20px;
+    border: none;
+    border-bottom: 0.3rem solid;
+    border-Radius: 4px;
+    background: black;
     color: red;
-    background: darken(peachorange, 5);
-    background-color: black;
-    border: 100;
-    border-radius: 10px;
+    font-Size:  14;
+    cursor: help;
+    scroll-margin: 20px;
+    margin-top: 0.1em;
+    position: relative;
+    top: 360px;
+    /* desplaza la caja de arriba hacia abajo con ' top ' */
+    bottom: 0;
+    right: 0;
+    left: 125px;
+    /* va a desplazar de izquierda a dereccha con left: ; */
 
+    
+    /* position:static ; 
+    top: 160px; left: 730px;
+  */
+    /* appearance:unset */
+    /* animation-iteration-count: 0; */
+    /* transform-origin: -100% 50%;
+    transform: rotate(15deg); */
 }
+.card .buttonInicio:hover{
+    background-color: aqua;
+    border-radius: 0.5em;
+    margin: 0.5em;
+    cursor:move;
+} 
+
 .tittle {
-  text-align: center;
-  margin-top: 0.2em;
-  margin-bottom: 0.1em;
-  color: rgb(130, 26, 26);
+  margin-top: 0.0001em;
+  margin-bottom: 1.2em;
+  color: rgb(223, 1, 1);
+  height:0.1em;
+  max-width: 100%;
   font-size: 25pt;
+  /* border: 14;
+  border-radius: 90%;
+  padding:60px 100px; */
+  /* text-decoration: line-through; */
+  /* text-decoration: blink; */
+  /* text-decoration: overline; */
+  /* text-decoration: underline; */
+  /* text-align: center; */
+    table-layout: auto;
+    width: 100%;    
+    /* transform-origin: 0px 0px;
+    transform: translate(-70%, 10%) rotate(12deg) translate(70%, 0.1%); */
+    font: italic small-caps bold 30px/2 cursive; 
+  
+} 
+
+.tittleh2 { 
+    margin-top: 1 em;
+    margin-bottom: 0.1em;
+    color:#3498DB ;
+    height:0.1em;
+    max-width: 100%;
+    font-size: 10pt;
+    /* border: 14;
+    border-radius: 90%;
+    padding:60px 100px; */
+    /* text-decoration: line-through; */
+    /* text-decoration: blink; */
+    /* text-decoration: overline; */
+    /* text-decoration: underline; */
+    /* text-align: center; */
+      table-layout: auto;
+      width: 100%;    
+      /* transform-origin: 0px 0px;
+      transfor.m: translate(-70%, 10%) rotate(12deg) translate(70%, 0.1%); */
+      font: italic small-caps bold 30px/2 cursive;
+      position:relative;
+      top: -15px;
+      /* desplaza la caja de arriba hacia abajo con ' top ' */
+      bottom: 0;
+      right: 0px;
+      left: -150px;
+      /* va a desplazar de izquierda a dereccha con left: ; */
+  
+} 
+.tittleh3 {
+    margin-top: 1 em;
+    margin-bottom: 0.1em;
+    color: #34495E ;   
+    height:0.1em;
+    max-width: 100%;
+    font-size: 10pt;
+    /* border: 14;
+    border-radius: 90%;
+    padding:60px 100px; */
+    /* text-decoration: line-through; */
+    /* text-decoration: blink; */
+    /* text-decoration: overline; */
+    /* text-decoration: underline; */
+    /* text-align: center; */
+      table-layout: auto;
+      width: 100%;    
+      /* transform-origin: 0px 0px;
+      transfor.m: translate(-70%, 10%) rotate(12deg) translate(70%, 0.1%); */
+      font: italic small-caps bold 30px/2 cursive;
+      position:relative;
+      top: -40px;
+      /* desplaza la caja de arriba hacia abajo con ' top ' */
+      bottom: 0;
+      right: 0px;
+      left: 50px;
+      /* va a desplazar de izquierda a dereccha con left: ; */
+  
 }
 .Diseñobutton {
     background: darken(peachorange, 5);
@@ -26,18 +133,8 @@
     padding: 5px 0;
     margin-bottom: 3px;
 }
-
-.tittleTowlabel {
-    display: block;
-    text-transform: uppercase;
-    color: white;
-    background-color: black;
-    margin-bottom: 3px;
-    font-size: 20px;
-    font-family:'Times New Roman', Times, serif;
-    text-transform: capitalize;
-    border-radius: 10px;
-    font-size: 25px;
-    background-attachment: fixed;
-    box-sizing:content-box
-} 
+.imagenh1 {
+    border:rgb(147, 20, 20);
+   
+    border-Radius: 40px;
+}

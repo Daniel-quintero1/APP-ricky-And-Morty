@@ -10,9 +10,12 @@
 }
 
 .TwoApp {
+   display:inline-flex;
    justify-content:center;
    align-items: center;
    margin: 0%;
+   width: 98%;
+   height: 215vh;
    /* margen de imagen  */
    background-size: cover;
    background-position: center;
@@ -23,7 +26,9 @@
    position: relative;
    text-align: center; 
    /* text aliagn center centra el texto  */
-   opacity: 0.8;
+   opacity: 0.9;
+   max-width: 100%;
+   
    /* recuerda para trasparencia es opacity */
 
 }
