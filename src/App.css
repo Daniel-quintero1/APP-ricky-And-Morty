@@ -3,31 +3,30 @@
    text-align: center;
    background-image: url(https://cloudfront-us-east-1.images.arcpublishing.com/infobae/OEKCSJM6EVALLNKGJJS3KDSU74.jpg);
 	position: relative;
-	width: 96.7%;   
-   overflow-y: visible;
-   position: absolute;
-   background-repeat:initial;
+	width: 110%;   
+   position: relative;
+   background-repeat:repeat;
 }
 
 .TwoApp {
-   display:inline-flex;
+   display:inline-table;
    justify-content:center;
    align-items: center;
    margin: 0%;
-   width: 98%;
-   height: 215vh;
+   width: 200%;
+   height: 300vh;
    /* margen de imagen  */
    background-size: cover;
    background-position: center;
    background-repeat: no-repeat;
    background-image: url(https://cloudfront-us-east-1.images.arcpublishing.com/infobae/OEKCSJM6EVALLNKGJJS3KDSU74.jpg);
-   background-attachment: fixed;
+   background-attachment:scroll;
    /* esta opcion te fija la iamgen en la pantalla */
    position: relative;
    text-align: center; 
    /* text aliagn center centra el texto  */
    opacity: 0.9;
-   max-width: 100%;
+   max-width: 130%;
    
    /* recuerda para trasparencia es opacity */
 
