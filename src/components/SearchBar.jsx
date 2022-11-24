@@ -4,13 +4,12 @@ export default function SearchBar(props) {
    // const { onSearch } = props
    const [characters, setCharacters] = useState("");
    const handleChange = (e) => {
-   const {value} = e.target;
-   setCharacters(value)
+   setCharacters(e.target.value)
    }
    return (
 
       <div>
-         <input type='search' name='search' id="" handleChange={handleChange} />
+         <input type='search' value={characters} onChange={handleChange} />
          <button onClick={() => props.onSearch(characters)}>Agregar</button>
       </div>
    );

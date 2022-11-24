@@ -1,6 +1,6 @@
 import Card from "./Card";
 export default function Cards(props) {
-   const { characters } = props;
+   const { characters, onClose } = props;
    return (
    characters.map((p) =><Card 
    key={p.name}
@@ -8,7 +8,7 @@ export default function Cards(props) {
    species={p.species}
    gender={p.gender}
    image={p.image}
-   onClose={p.onClose}
+   onClose = { () => {onClose(p.id)}}
    />
 )
 )};
