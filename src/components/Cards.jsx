@@ -2,8 +2,9 @@ import Card from "./Card";
 export default function Cards(props) {
    const { characters, onClose } = props;
    return (
-   characters.map((p) =><Card 
-   key={p.name}
+   characters.map((p) =><Card
+   key={p.id}
+   id={p.id}
    name={p.name}
    species={p.species}
    gender={p.gender}
