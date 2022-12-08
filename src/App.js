@@ -16,16 +16,18 @@ function App() {
 
   const navigate = useNavigate();
   const [access, setAccess] = useState(false);
-  const username = 'ejemplo@gmail.com';
-  const password = '1password';
+  const username = 'daqcarrillo@gmail.com';
+  const password = 'daqc0409';
   
   function login(userData) {
      if (userData.password === password && userData.username === username) {
-        setAccess(true);
-        navigate('/home');
+        setAccess(true);//cuando esto llega a true y activa mi hook useNavigate
+        navigate('/home');//aca es donde dirigimos a home, recuerda q FORM esta la en ruta raiz para q pueda renderizar y rutear
+     } else {
+      alert('Usuario y contraseña incorrecta. ')
      }
   }
-  useEffect(() => {
+  useEffect(() => { // si el acceso no esta correcto o no estan bien, entonces te quedas en la ruta raiz. 
     !access && navigate('/');
   }, [access]);
 
@@ -46,16 +48,14 @@ function App() {
   const onClose = (id) => {
     setCharacters(characters.filter((char) => char.id !== id))
   }
-  const handleSubmit = (userData) => {
-    login();
-  }
+
   return (
-    <div className='App' style={{ padding: '25px' }}>
+    <div className='TwoApp' style={{ padding: '55px' }}>
       <div style={{ display: 'flex', justifyContent: 'space-evenly' }}>
         {location.pathname !== '/' && <Nav onSearch={onSearch} />}
       </div>
       <Routes>
-        <Route path='/' element={<Form onChange={handleSubmit} login={login}/>}></Route>
+        <Route path='/' element={<Form login={login}/>} ></Route>
         <Route path='/home' element={<Cards characters={characters} onClose={onClose} />} />
         <Route path='/about' element={<About />} />
         <Route path='/detail/:detailId' element={<Detail />} />

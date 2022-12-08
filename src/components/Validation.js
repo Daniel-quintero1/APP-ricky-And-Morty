@@ -10,3 +10,4 @@ if(userData.password.lenght < 6 && userData.password.lenght > 10) errors.passwor
 return errors;
 }
 
+  

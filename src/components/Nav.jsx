@@ -6,7 +6,9 @@ export default function Nav(props) {
   return (
     <div className={stilo.APP}>
       <Link to='/home'>Home</Link>
+      <br />
       <Link to='/about'>About</Link>
+      <br />
       <SearchBar onSearch={props.onSearch} />
     </div>
   );
