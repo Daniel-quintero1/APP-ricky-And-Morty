@@ -1,29 +1,43 @@
-import { connect } from "react-redux"
+import { connect, useDispatch } from "react-redux"
 import { useNavigate } from "react-router-dom";
+import { filterCards, orderCards } from "../redux/action";
+import CARDS from '../components/Cards.module.css'
+
 export function Favorites({ myFavorites }) {
     const navigate = useNavigate();
     const handleClick = () => {
         navigate('/home')
     };
+
+const dispatch = useDispatch();
+
+const handleSubmit = (e) => {
+    const name = e.target.name;
+    const value = e.target.value;
+  if(name === 'ordenes') return dispatch(orderCards(value))
+  if ( name === 'filter') return dispatch(filterCards(value))
+}
     return (
-        <div>
+        <div >
             <div>
-                <select name="ordenes">
-                    <option value="Ascendiente"></option>
-                    <option value="Descendiente"></option>
+                <select onClick={handleSubmit} name="ordenes">
+                    <option value="Ascendiente">Ascendente</option>
+                    <option value="Descendiente">Descendente</option>
                 </select>
-                <select name="filter">
-                    <option value="Male"></option>
-                    <option value="Famele"></option>
-                    <option value="Genderless"></option>
-                    <option value="unknown"></option>
+                <select onClick={handleSubmit} name="filter">
+                    <option value="Male">Male</option>
+                    <option value="Famele">Famele</option>
+                    <option value="Genderless">Genderless</option>
+                    <option value="unknown">unknown</option>
                 </select>
             </div>
             <button onClick={handleClick}>Go Home</button>
             <h1>Favorites</h1>
             {myFavorites.map((personaje) =>
-                <div>
+                <div  className={CARDS.Tarjeta}>
                     <h3>{personaje.name}</h3>
+                    <h3>{personaje.gender}</h3>
+                    <h3>{personaje.species}</h3>
                     <img src={personaje.image} alt="" />
                 </div>)}
         </div>

@@ -1,9 +1,6 @@
 /* aca  haremos los fondos de la pagina */
 .App {
    
-
-    
-    
       font-family: 'Roboto', sans-serif;
       font-weight: 300;
       font-size: 22px;    
@@ -23,6 +20,7 @@
 .TwoApp {
    background: #f0f0f0;
    display: flex;
+   margin: auto;
    justify-content: center;
    align-items: center;
    flex-direction: column;

@@ -1,6 +1,6 @@
 
 import {ADD_PRODUCT, DELETE_PRODUCT, FILTER, ORDER} from './store'
-
+// recuerda este es el estado global inicial
 const initialState = {
     myFavorites: [],
     allCharacter: [],
@@ -34,7 +34,7 @@ const rootReducer = (state = initialState, {type, payload}) => {
                     return 0})] 
                     :
                     [...state.myFavorites.sort(
-                        (a,b) => {
+                (a,b) => {
                             if(a.name < b.name) return 1
                             if(a.name > b.name) return -1
                             return 0})] 

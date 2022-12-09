@@ -28,11 +28,11 @@ export default function Form(props) {
       }
 
     return (
+        <form onSubmit={handleSubmit} >
 
-        <form onSubmit={handleSubmit}>
             
-                <label htmlFor="username">Username:</label>
-                <input
+                <label  htmlFor="username">Username:</label>
+                <input 
                     id='username'
                     name="username"
                     value={userData.username}
@@ -50,6 +50,6 @@ export default function Form(props) {
                     <p>{errors.password}</p>
                 <button type="submit">Enviar</button>   
         </form>
-    
+       
     )
 }

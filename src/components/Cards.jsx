@@ -1,12 +1,13 @@
 import Card from "./Card";
-import stilo from './Card.module.css'
+import CARDS from '../components/Cards.module.css'
 
 export default function Cards(props) {
    const { characters, onClose } = props;
    return (
-      <div className={stilo.container}>
-         {
-         characters.map((p) =><Card
+      <div>
+         <div className={CARDS.container}>
+            <div>
+         {characters.map((p) =><Card
          key={p.id}
          id={p.id}
          name={p.name}
@@ -16,6 +17,8 @@ export default function Cards(props) {
          onClose = { () => {onClose(p.id)}}
          />
          )}
+         </div>
+         </div>
       </div> 
 
 )};
